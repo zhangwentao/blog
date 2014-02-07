@@ -58,9 +58,59 @@ a:visited { color: #a0a; }
 .site {
   font-size: 115%;
   text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
+  max-width: 600px;
+  margin: 20px auto 10px;
   line-height: 1.5em;
+  padding: 0 10px;
+}
+
+.post {
+  margin-bottom: 30px;
+}
+
+.post-date {
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
+}
+
+.post-title {
+  text-align: center;
+}
+
+.title-content {
+    min-width: 20px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding: 0 28px;
+}
+
+
+.title-content:before,
+.title-content:after {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 8px;
+  background-image: url(../img/icon-patterns.svg);
+  background-repeat: no-repeat;
+  margin: auto 0;
+  vertical-align: 2px;
+}
+
+.title-content:before {
+   background-position: 0 0;
+   left: 0;
+}
+
+.title-content:after {
+  background-position: -26px 0;
+  right: 0;
 }
 
 .header a {
