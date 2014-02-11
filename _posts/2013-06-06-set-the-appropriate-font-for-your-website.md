@@ -37,7 +37,7 @@ title: 为你的网站设置合适的字体
 
      <p>english中文</p>
 
-如果我们想要为这个p元素中的应为字体使用Times New Roman字体，中文使用宋体，这样写css:
+如果我们想要为这个p元素中的**英文**英字体使用**Times New Roman**字体，**中文**使用**宋体**，这样写css:
 
 	p { font-family:'Times New Roman',宋体;}
 
