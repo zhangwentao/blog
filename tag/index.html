@@ -1,0 +1,19 @@
+---
+layout: default 
+title: "文章标签"
+---
+
+<section class="category-list">
+	<ul>
+	{% for tag in site.tags %}
+		<li>
+		<h1 id="{{ tag[0] }}"><a href="#{{tag[0]}}">{{ tag[0] }}</a></h1>
+			<ul>
+				{% for article in tag[1] %}
+				<li><a href="{{article.url}}">{{ article.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</li>
+	{% endfor %}
+	</ul>
+</section>

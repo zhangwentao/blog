@@ -3,12 +3,18 @@ layout: default
 title: "文韬·秘"
 ---
 
-<div id="home">
-	<ul class="posts">
-		{% for post in site.posts %}
-		<li>
-			<a href="{{ post.url }}">{{ post.title }}</a>
-		</li>
-		{% endfor %}
-	</ul>
-</div>
+<section class="recent-article">
+	{% for post in paginator.posts %}
+	<article>
+		<header>
+			<h1><a href="{{post.url}}">{{ post.title }}</a></h1>
+			<time>{{ post.date | date:"%Y-%m-%d"}}</time>
+		</header>
+		{{ post.content }}
+	</article>
+	{%endfor%}
+	<nav class="pagging">
+		<a class="pre" href="{{paginator.previous_page_path}}" title="上一页"></a>
+		<a class="next" href="{{paginator.next_page_path}}" title="下一页"></a>
+	</nav>
+</section>

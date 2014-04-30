@@ -1,0 +1,19 @@
+---
+layout: default 
+title: "文章分类"
+---
+
+<section class="category-list">
+	<ul>
+	{% for ctg in site.categories %}
+		<li>
+		<h1 id="{{ ctg[0] }}"><a href="#{{ctg[0]}}">{{ ctg[0] }}</a></h1>
+			<ul>
+				{% for article in ctg[1] %}
+				<li><a href="{{article.url}}">{{ article.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</li>
+	{% endfor %}
+	</ul>
+</section>

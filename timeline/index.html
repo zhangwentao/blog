@@ -1,0 +1,26 @@
+---
+layout: default 
+title: "时间线"
+---
+
+<section class="timeline">
+	<ul>
+		{% for post in site.posts %}
+			{% assign cur_year = post.date | date:"%Y" %}
+			{% assign cur_month = post.date | date:"%m" %}
+			{% if post_month != cur_month  ||  post_year != cur_year %}
+				{% unless forloop.first %}
+					</ul>
+					</li>
+				{% endunless %}
+				{% assign post_year = cur_year %}
+				{% assign post_month = cur_month %}
+				<li id="{{post_year}}-{{post_month}}">
+				<time><a href="#{{post_year}}-{{post_month}}"><span>{{post_year}}</span><span>{{post_month}}</span></a></time>
+					<ul>
+			{% endif %}
+			<li><a href="{{post.url}}">{{ post.title }}</a></li>
+		{% endfor %}
+			</li>
+	</ul>
+</section>

@@ -1,23 +1,57 @@
 ---
 layout: default
 ---
+<section class="article-detail">
+	<article class="post">
+		<header>
+			<h1 class="post-title">{{ page.title }}</h1>
+			<time class="post-time"><a href="/timeline/#{{page.date | date: "%Y-%m"}}">{{ page.date | date: "%Y-%m-%d" }}</a></time>
+		</header>
+			{{ content }}
+	</article>
 
-<h2 class="post-title"><span class="title-content">{{ page.title }}</span></h2>
-<p class="meta post-date">{{ page.date | date: "%Y-%m-%d" }}</p>
-<div class="post">
-{{ content }}
-</div>
-<!-- Duoshuo Comment BEGIN -->
-<div class="ds-thread"></div>
-<script type="text/javascript">
-	var duoshuoQuery = {short_name:"salfishark"};
-	(function() {
-	 var ds = document.createElement('script');
-	 ds.type = 'text/javascript';ds.async = true;
-	 ds.src = 'http://static.duoshuo.com/embed.js';
-	 ds.charset = 'UTF-8';
-	 (document.getElementsByTagName('head')[0] 
-	  || document.getElementsByTagName('body')[0]).appendChild(ds);
-	 })();
-</script>
-<!-- Duoshuo Comment END -->
+	<section class="relate-info">
+		{% assign tagnum = page.tags | size %}
+		{% assign catnum = page.categories | size %}
+		<ul>
+			{% if catnum > 0 %}
+			<li>
+				<h1>分类:</h1>
+				<ul>
+					{% for cat in page.categories %}
+					<li><a href="/category/#{{cat}}">{{cat}}</a></li>
+					{% endfor %}
+				</ul>
+			</li>
+			{% endif %}
+
+			{% if tagnum > 0 %}
+			<li>
+				<h1>标签:</h1>
+				<ul>
+					{% for tag in page.tags %}
+						<li><a href="/tag/#{{tag}}">{{tag}}</a></li>
+					{% endfor %}
+				</ul>
+			</li>
+			{% endif %}
+		</ul>
+	</section>
+
+	<section class="comments">
+	<!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+	<script type="text/javascript">
+		var duoshuoQuery = {short_name:"salfishark"};
+		(function() {
+		 var ds = document.createElement('script');
+		 ds.type = 'text/javascript';ds.async = true;
+		 ds.src = 'http://static.duoshuo.com/embed.js';
+		 ds.charset = 'UTF-8';
+		 (document.getElementsByTagName('head')[0] 
+		  || document.getElementsByTagName('body')[0]).appendChild(ds);
+		 })();
+	</script>
+	<!-- Duoshuo Comment END -->
+	</section>
+</section>
