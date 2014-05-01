@@ -24,7 +24,9 @@ title: 为你的网站设置合适的字体
 其中有个例子，我觉得对如何选择中文字体很有帮助：
 >你可能想指定在一个文档中使用 Times 或 任何其他 serif 字体：
 >
->     body { font-family: Times, serif;}
+>```css
+>body { font-family: Times, serif;}
+>```
 >
 >对每个元素，用户代理要检查该元素中的字符，并确定Times是否能提供匹配的字符。在大多数情况下，确实能做到这一点而没有任何问题。不过，假设段落中有一个汉字字符，Times 没有与这个汉字匹配的字符，所以用户代理必须忽略这个字符，或者查找另一个能满足该元素显示需求的字体。当然，任何西方字体都不太可能包含中文字符，不过假设存在这样一种字体（暂且称之为 AsiaTimes），用户代理显示该元素时可以使用这个字体——或者只是显示这个字符时使用该字体。因此，可能整个段落用AsiaTimes显示，或者段落中的所有内容都用Times显示，只有那个中文字除外，它用 AsiaTimes 显示。
 
@@ -35,14 +37,20 @@ title: 为你的网站设置合适的字体
 
 这样就可以分别为中英问选择适合的字体了，但是要注意在font-family中字体的顺序。例如：
 
-     <p>english中文</p>
+```html
+<p>english中文</p>
+```
 
 如果我们想要为这个p元素中的**英文**英字体使用**Times New Roman**字体，**中文**使用**宋体**，这样写css:
 
-	p { font-family:'Times New Roman',宋体;}
+```css
+p { font-family:'Times New Roman',宋体;}
+```
 
 font-family中的顺序反过来
 
-	p { font-family:宋体,'Times New Roman';}
+```css
+p { font-family:宋体,'Times New Roman';}
+```
 
 就不能达到想要的效果了，因为宋体同时包含中英文字符，中英文会全部用宋体显示(win-xp)。
