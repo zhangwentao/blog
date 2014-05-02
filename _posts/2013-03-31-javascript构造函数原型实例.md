@@ -88,7 +88,7 @@ var p = new Person();
 
 ```javascript
 Person.prototype = {
-     sayHi： function(){
+     sayHi: function(){
              return 'hello';
      }
 }
