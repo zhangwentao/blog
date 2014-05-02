@@ -17,7 +17,7 @@
 				<nav>
 					<ul>
 						<li>
-							<h2>导航</h2>
+							<h1>导航</h1>
 							<ul>
 								<li><a href="/rss.xml">rss</a></li>
 								<li><a href="http://resume.wentao.me">简历</a></li>
@@ -25,7 +25,7 @@
 							</ul>
 						</li>
 						<li>
-							<h2>链接</h2>
+							<h1>链接</h1>
 							<ul>
 								<li><a href="https://plus.google.com/u/0/110501026063057506169">g+</a></li>
 								<li><a href="http://weibo.com/taoofme">weibo</a></li>
@@ -34,18 +34,18 @@
 							</ul>
 						</li>
 						<li>
-							<h2>分类</h2>
+							<h1>分类</h1>
 							<ul>
 								{% for ctg in site.categories %}
-								<li><a href="/category/#{{ctg[0]}}">{{ctg[0]}}</a></li>
+								<li><a href="/category/#{{ctg[0]}}" title="{{ctg[0]}}">{{ctg[0]}}</a></li>
 								{% endfor %}
 							</ul>
 						</li>
 						<li>
-							<h2>标签</h2>
+							<h1>标签</h1>
 							<ul>
 								{% for tag in site.tags %}
-								<li><a href="/tag/#{{tag[0]}}">{{tag[0]}}</a></li>
+								<li><a href="/tag/#{{tag[0]}}" title="{{tag[0]}}">{{tag[0]}}</a></li>
 								{% endfor %}
 							</ul>
 						</li>
@@ -57,9 +57,8 @@
 				<p class="copyright">All rights reserved &copy;
 				<a href="/">{{ site.name }}</a><br>
 				theme by
-				<a href="/">wentao.me</a>
-				,power by
-				<a href="http://jekyllrb.com/">jekyll</a></p>
+				<a href="/">wentao.me</a>,power by
+				<a href="http://jekyllrb.com/" title="Jekyll &bull; Simple, blog-aware, static sites">jekyll</a>.</p>
 			</footer>
 	</body>
 </html>

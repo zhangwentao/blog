@@ -3,7 +3,7 @@ layout: default
 title: "文韬·秘"
 ---
 
-<section class="recent-article">
+<section class="site-main recent-article">
 	{% for post in paginator.posts %}
 	<article>
 		<header>
@@ -14,7 +14,7 @@ title: "文韬·秘"
 	</article>
 	{%endfor%}
 	<nav class="pagging">
-		<a class="pre" href="{{paginator.previous_page_path}}" title="上一页"></a>
-		<a class="next" href="{{paginator.next_page_path}}" title="下一页"></a>
+		<a class="pre" href="{{paginator.previous_page_path}}" title="上一页">上一页</a>
+		<a class="next" href="{{paginator.next_page_path}}" title="下一页">下一页</a>
 	</nav>
 </section>
