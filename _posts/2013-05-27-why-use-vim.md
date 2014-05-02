@@ -1,6 +1,8 @@
 ---
 title: why use vim?
 layout: post
+category: '技术'
+tag: ['vim']
 ---
 
 vim let you do every thing with keyboard,without mouse，

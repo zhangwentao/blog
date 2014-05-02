@@ -1,6 +1,8 @@
 ---
 title: javascript 构造函数 原型 实例
 layout: post
+category: "技术"
+tag: ["javascript","构造函数"]
 ---
 
 以下我将通过几个小试验来了解一个对象和它的构造函数、原型、它构造函数的prototype属性间的关系，以及一个通过new和构造函数创建的对象，从被创建到被构造函数初始话的过程。
