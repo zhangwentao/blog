@@ -46,13 +46,13 @@ tag: ['css','字体']
 如果我们想要为这个p元素中的**英文**英字体使用**Times New Roman**字体，**中文**使用**宋体**，这样写css:
 
 ```css
-p { font-family:'Times New Roman',宋体;}
+p { font-family:'Times New Roman','宋体';}
 ```
 
 font-family中的顺序反过来
 
 ```css
-p { font-family:宋体,'Times New Roman';}
+p { font-family:'宋体','Times New Roman';}
 ```
 
 就不能达到想要的效果了，因为宋体同时包含中英文字符，中英文会全部用宋体显示(win-xp)。
