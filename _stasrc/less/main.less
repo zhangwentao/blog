@@ -85,6 +85,9 @@ a {
 		}
 		&>ul>li {
 			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 		&>ul>li>ul {
 			line-height: 20px;
@@ -151,6 +154,7 @@ a {
 		border-radius: 5px;
 		margin-bottom: @article-block-spacing;
 		background:url("@{images}/grid.png") repeat;
+		overflow: auto;
 	}
 	blockquote {
 		border-left: 4px solid gray;
@@ -347,4 +351,41 @@ a {
 		}
 	}
 
+}
+
+@media (max-width:800px) {
+	.site-header {
+		position: static;
+		width: auto;
+		padding: 10px 5px;
+		margin-bottom: 20px;
+		.site-name {
+			margin: 0;
+			text-align: left;
+		}
+		.slogen {
+			text-align: right;
+		}
+	}
+	.site-main {
+		max-width: none;
+		width: auto;
+		padding: 10px;
+	}
+	.site-footer {
+		position: static;
+		max-width: none;
+		width: auto;
+		padding: 15px 15px 5px 15px;
+		border-top: 1px solid #fff;
+	}
+	.wrapper {
+		padding: 0;
+		min-width: 0;
+	}
+	.site-sidebar {
+		position: static;
+		width: auto;
+		padding: 20px 0;
+	}
 }
