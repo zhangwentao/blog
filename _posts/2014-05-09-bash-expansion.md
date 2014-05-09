@@ -56,7 +56,6 @@ Desktop Pictures Templates Documents Music Public Videos
 wentao@wentao-laptop:~$ echo /usr/*/*bin
 /usr/bin/prezip-bin /usr/local/bin /usr/local/sbin /usr/share/libc-bin
 ```
-doubanclaimf6cbbe55b865624c
 
 ###总结:
 + 我们所说的展开只涉及到命令中参数的展开,也就是某个命令之后的参数.
