@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "THE-LINUX-COMMAND-LINE"
-tag: ['bash','linux']
+tag: ['bash','linux','译']
 ---
 
 #用SHELL的视角看世界
@@ -56,6 +56,8 @@ Desktop Pictures Templates Documents Music Public Videos
 wentao@wentao-laptop:~$ echo /usr/*/*bin
 /usr/bin/prezip-bin /usr/local/bin /usr/local/sbin /usr/share/libc-bin
 ```
+
+	注\*: 原文出自<<THE LINUX COMMAND LINE>>
 
 ###总结:
 + \*(通配符)展开只涉及到路径名的展开
