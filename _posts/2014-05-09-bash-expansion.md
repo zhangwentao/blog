@@ -57,7 +57,7 @@ wentao@wentao-laptop:~$ echo /usr/*/*bin
 /usr/bin/prezip-bin /usr/local/bin /usr/local/sbin /usr/share/libc-bin
 ```
 
-	注\*: 原文出自<<THE LINUX COMMAND LINE>>
+注\*: 原文出自[『THE LINUX COMMAND LINE』](http://book.douban.com/subject/6806862/)
 
 ###总结:
 + \*(通配符)展开只涉及到路径名的展开
