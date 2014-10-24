@@ -5,7 +5,7 @@ category: "技术"
 tag: ['javascript','web前端']
 ---
 
-javascript还没有支持**Class**关键字.但是可以使用js的原型继承机制可以模拟类似java中的类.
+javascript还没有支持**Class**关键字.但是使用js的原型继承机制可以模拟类似java中的类.
 
 如下,创建了一个Car类并创建了一个此类的实例myCar
 
@@ -56,7 +56,7 @@ Car.prototype.constructor === Car; // true
 
 ```
 
-代码三其实是使Car的prototype属性引用了一个新创建的对象.并显示的在这个新的prototype中添加了属性constructor引用Car函数.据我的经验,如果不显式的指定constructor这个属性的话,也不会对类的定义有影响.这个constructor没用吗?!引用大犀牛书中的一段话:
+代码三其实是使Car的prototype属性引用了一个新创建的对象.并在这个新的prototype中添加了引用Car函数constructor属性.据我的经验,如果不指定constructor这个属性的话,也不会对类的定义有影响.这个constructor没用吗?!引用大犀牛书中的一段话:
 
 >构造函数的原型中存在预先定义好的constructor属性,这意味着对象通常继承的constructor均指代他们的构造函数.由于构造函数是类的"公共标识",因此这个constructor属性为对象提供了类.	
 
@@ -68,7 +68,7 @@ obj instanceOf Car;
 
 ```
 
-但是,怎样能直接知道某个对象是某个类的实例呢?,而不是判断它是不是某个类的实例.就像说,"我不想知道这种动物是不是兔子,我想知道它到底是什么动物".这时constructor就有用了.
+但是,怎样能直接知道某个对象是哪个类的实例呢?,而不是判断它是不是某个类的实例.就像说,"我不想知道这种动物是不是兔子,我想知道它到底是什么动物".这时constructor就有用了.
 
 ```javascript
 
