@@ -27,7 +27,7 @@ var myCar = new Car();
 ```javascript
 
 Car.prototype.start = function () {
-		console.log('stating');	
+		console.log('starting');	
 	}
 };
 
@@ -42,7 +42,7 @@ Car.prototype.start = function () {
 Car.prototype = {
 	constructor: Car,
 	start: function () {
-		console.log('stating');	
+		console.log('starting');	
 	}
 };
 
