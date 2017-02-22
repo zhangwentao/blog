@@ -4,3 +4,5 @@ highlighter: rouge
 paginate: 5
 paginate_path: "p:num"
 gems: [jekyll-paginate]
+seurl: / 
+url: http://zhangwentao.github.io
