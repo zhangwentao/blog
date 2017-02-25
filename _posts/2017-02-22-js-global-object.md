@@ -2,6 +2,7 @@
 title: '为什么this === window' 
 layout: post
 category: '技术'
+published: false
 tag: ['javascript','前端']
 ---
 
