@@ -6,6 +6,8 @@ published: true
 tag: ['javascript','前端','webpack','minipack']
 ---
 
+通过阅读 [minipack](https://github.com/ronami/minipack/blob/master/src/minipack.js) 对于 webpack 打包工具的原理有更好的认识。
+
 模块打包器的功能是将小块独立的代码编制成更大而复杂的可以运行在浏览器中的代码。这些小块的代码就是 一些 JavaScript 文件，其中用模块系统描述了彼此的依赖关系。
 
 ``` javascript
@@ -118,3 +120,5 @@ require(id) 函数的作用是，从之前生成好的 id -> [ function,dependen
     3. 以此递归执行，从根到达每个树叶，全都执行。
 
 此外，最终包裹成的这个 自执行 函数，中，手动调用了 require(0), id为0的模块是，构造依赖图时，整个程序的 入口 模块。从这里开启整个程序的执行。
+
+
