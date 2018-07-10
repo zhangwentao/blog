@@ -2,7 +2,7 @@
 title: '从minipack理解webpack原理' 
 layout: post
 category: '技术'
-published: false
+published: true
 tag: ['javascript','前端','webpack','minipack']
 ---
 
