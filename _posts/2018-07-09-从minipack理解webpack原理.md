@@ -112,6 +112,7 @@ function createGraph(entry) {
 
 require(id) 函数的作用是，从之前生成好的 id -> [ function,dependenciesArray ] 字典中，通过参数id找到指定的 模块（函数，及其依赖信息）。
 主要功能是：
+
     1. 把id对应的模块中 “向外暴露的公开字段（包括，属性和函数）”提取出来。
     2. 并向模块中注入require函数，使模块具有引入依赖的能力，
     3. 以此递归执行，从根到达每个树叶，全都执行。
