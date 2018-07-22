@@ -6,3 +6,8 @@ paginate_path: "p:num"
 gems: [jekyll-paginate]
 seurl: / 
 url: http://zhangwentao.github.io
+title: 文韬·秘
+description: 文韬的blog
+plugins:
+  - jekyll-feed
+
