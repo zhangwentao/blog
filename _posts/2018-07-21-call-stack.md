@@ -19,4 +19,4 @@ tag: ['javascript','基本概念']
 + 函数执行过程中构建的call stack （栈） 如果超过，解释器定义的栈的容量，会出现堆栈溢出错误（stack overflow）。
 
 # 参考资料
-> [Call stack | MDN]( https://developer.mozilla.org/en-US/docs/Glossary/Call_stack)
+> [Call stack | MDN](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack)
