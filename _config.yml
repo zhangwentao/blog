@@ -5,7 +5,7 @@ paginate: 5
 paginate_path: "p:num"
 gems: [jekyll-paginate]
 seurl: / 
-url: http://zhangwentao.github.io
+url: http://blog.wentao.me
 title: 文韬·秘
 description: 文韬的blog
 plugins:
