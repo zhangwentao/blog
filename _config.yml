@@ -1,4 +1,5 @@
 name: 文韬·秘
+markdown: kramdown
 highlighter: rouge
 paginate: 5
 paginate_path: "p:num"
