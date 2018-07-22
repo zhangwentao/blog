@@ -4,22 +4,19 @@ layout: null
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 	<channel>
-		<title>文韬·秘</title>
-		<link>http://blog.wentao.me</link>
+        <title>{{ site.title }}</title>
+        <link>{{ site.url }}</link>
 		<description>[文韬·秘]就是文韬的博客</description>
-		<image>
-			<title>文韬·秘</title>
-			<url>/img/photo.jpg</url>
-			<link>http://blog.wentao.me</link>
-		</image>
 		{% for post in site.posts %}
 		<item>
-				<title>{{ post.title }}</title>
-				<link>{{ post.url }}</link>
-				<description>
-					<![CDATA[{{ post.content }}]]>
-				</description>
-				<pubDate>{{ post.date }}</pubDate>
+			<title>{{ post.title }}</title>
+			<guid>
+				{{ post.url | prepend: site.url }}
+			</guid>
+			<description>
+				{{ post.content | escape | truncate: '1000' }}
+			</description>
+			<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 		</item>
 		{% endfor %}
 	</channel>
