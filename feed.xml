@@ -14,7 +14,7 @@ layout: null
 				{{ post.url | prepend: site.url }}
 			</guid>
 			<description>
-				<![cdata[{{ post.content | escape | truncate: '1000' }}]]>
+				{{ post.content | escape }}
 			</description>
 			<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 		</item>
