@@ -18,6 +18,8 @@ a {
 }
 
 .wrapper {
+    display: grid;
+    grid-template-columns: auto 270px;
 	position: relative;
 	min-height: 100%;
 	padding-right: @sidebar-width;
@@ -365,6 +367,9 @@ a {
 	html {
 		font-size: 16px;
 	}
+    .wrapper {
+        display: block;
+    }
 	.recent-article .pagging {
 		position: static;
 		text-align: center;
