@@ -2,12 +2,9 @@ name: 文韬·秘
 markdown: kramdown
 highlighter: rouge
 paginate: 5
-paginate_path: "p:num"
-gems: [jekyll-paginate]
+paginate_path: "page/:num"
+plugins: [jekyll-paginate,jekyll-feed]
 seurl: / 
 url: http://blog.wentao.me
 title: 文韬·秘
-description: 文韬的blog
-plugins:
-  - jekyll-feed
-
+description: 文韬的blog 
