@@ -1,7 +1,6 @@
 @import "reset";
 @import "syntax";
 
-@images: "/static/img";
 @main-bg-color: #fafafa;
 @sidebar-bg-color: #8f8f8f;
 @sidebar-color: #fff;
@@ -179,7 +178,7 @@ a {
 		padding: 10px;
 		border-radius: 5px;
 		margin-bottom: @article-block-spacing;
-		background:url("@{images}/grid.png") repeat;
+		background:url("../img/grid.png") repeat;
 		overflow: auto;
 	}
 	blockquote {
@@ -195,7 +194,7 @@ a {
 			display: inline-block;
 			width: 10px;
 			height: 10px;
-			background:url("@{images}/link.png");
+			background:url("../img/link.png");
 			background-size: cover;
 			margin-right: 4px;
 		}
@@ -255,7 +254,7 @@ a {
 		color: lighten(#333,20%);
 	}
 	padding-bottom: 30px;
-	background:url("@{images}/icon-patterns.svg") no-repeat center bottom;
+	background:url("../img/icon-patterns.svg") no-repeat center bottom;
 	margin-bottom: 40px;
 }
 
@@ -278,7 +277,7 @@ a {
 			display: inline-block;
 			width: 32px;
 			height: 32px;
-			background: url("@{images}/arrow.png") no-repeat 0 0;
+			background: url("../img/arrow.png") no-repeat 0 0;
 			background-size: cover;
 		}
 		.pre {

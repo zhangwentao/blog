@@ -1,25 +1,43 @@
 const path = require('path');
 const src = path.resolve('src/js/index.js');
-const distDir = path.resolve('../static/js');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const distPath = path.resolve(__dirname,'../static');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
+	mode: 'production',
     entry: src,
     output: {
-        path: distDir,
-        filename: 'index.js'
+        path: distPath,
+        filename: '[name].min.js'
     },
     module: {
         rules: [
             {
                 test: /\.less$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: ['css-loader','less-loader']
-                })
-            }
+                use: [
+					{
+						loader: MiniCssExtractPlugin.loader,
+					},
+					'css-loader',
+					'less-loader'
+				]
+			},
+			{
+				test: /\.(jpeg|jpg|gif|png|svg)$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: 'img/[name].[ext]',
+							emitFile: true
+						}
+					}
+				]
+			}
         ]
     },
     plugins: [
-        new ExtractTextPlugin("style.css")
+		new MiniCssExtractPlugin({
+			filename: "[name].min.css"
+		})
     ]
 };
