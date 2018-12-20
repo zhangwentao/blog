@@ -182,7 +182,7 @@ a {
 }
 .side {
   color: #fff;
-  background-color: #8f8f8f;
+  background-color: #666;
 }
 .side a {
   color: #fff;
@@ -221,7 +221,7 @@ a {
 }
 .tag-item:hover {
   background-color: #fff;
-  color: #8f8f8f;
+  color: #666;
 }
 .site-sidebar {
   grid-column-start: 2;
@@ -229,7 +229,7 @@ a {
   grid-row-start: 2;
   grid-row-end: 3;
   color: #fff;
-  background-color: #8f8f8f;
+  background-color: #666;
 }
 .site-sidebar a {
   color: #fff;
@@ -241,7 +241,7 @@ a {
 }
 .site-sidebar a:hover {
   background-color: #fff;
-  color: #8f8f8f;
+  color: #666;
 }
 .site-sidebar nav {
   margin: 0 30px;
@@ -276,7 +276,7 @@ a {
 .site-header,
 .site-footer {
   color: #fff;
-  background-color: #8f8f8f;
+  background-color: #666;
   z-index: 1;
   text-align: center;
 }
@@ -333,7 +333,7 @@ a {
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
-  background: #333;
+  background: #272822;
   overflow: auto;
 }
 .common-article blockquote {
@@ -427,7 +427,7 @@ a {
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
-  background: #333;
+  background: #272822;
   overflow: auto;
 }
 .recent-article article blockquote {
@@ -548,7 +548,7 @@ a {
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
-  background: #333;
+  background: #272822;
   overflow: auto;
 }
 .article-detail article blockquote {
@@ -647,7 +647,7 @@ a {
 }
 .article-detail .relate-info a:hover {
   color: #fff;
-  background-color: #8f8f8f;
+  background-color: #666;
 }
 .article-detail .relate-info h1 {
   position: absolute;
