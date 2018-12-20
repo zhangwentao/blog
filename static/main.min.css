@@ -329,10 +329,12 @@ a {
   background: url(img/icon-patterns.svg) no-repeat center bottom;
   margin-bottom: 40px;
 }
+.common-article .highlighter-rouge {
+  margin-bottom: 10px;
+}
 .common-article .highlight {
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: 10px;
   background: #272822;
   overflow: auto;
 }
@@ -423,10 +425,12 @@ a {
   margin-bottom: 40px;
   margin-bottom: 80px;
 }
+.recent-article article .highlighter-rouge {
+  margin-bottom: 10px;
+}
 .recent-article article .highlight {
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: 10px;
   background: #272822;
   overflow: auto;
 }
@@ -544,10 +548,12 @@ a {
   background: url(img/icon-patterns.svg) no-repeat center bottom;
   margin-bottom: 40px;
 }
+.article-detail article .highlighter-rouge {
+  margin-bottom: 10px;
+}
 .article-detail article .highlight {
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: 10px;
   background: #272822;
   overflow: auto;
 }
