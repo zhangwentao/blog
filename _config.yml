@@ -8,3 +8,5 @@ seurl: /
 url: http://blog.wentao.me
 title: 文韬·秘
 description: 文韬的blog 
+
+theme: jekyll-theme-cayman
