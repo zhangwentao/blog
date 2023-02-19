@@ -4,9 +4,10 @@ highlighter: rouge
 paginate: 5
 paginate_path: "page/:num"
 plugins: [jekyll-paginate,jekyll-feed]
-seurl: / 
+seurl: /
 url: http://blog.wentao.me
 title: 文韬·秘
-description: 文韬的blog 
-
-theme: jekyll-theme-cayman
+description: 文韬的blog
+sass:
+  sass_dir: _scss 
+  style: compressed
