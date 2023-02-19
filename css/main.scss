@@ -196,15 +196,6 @@ a {
 	a {
 		color: #333;	
 		transition: .5s;
-		&:after {
-			content: "";
-			display: inline-block;
-			width: 10px;
-			height: 10px;
-			background:url("../assets/img/link.png");
-			background-size: cover;
-			margin-right: 4px;
-		}
 		&:hover {
 			text-shadow: 1px 0px 2px rgba(46, 49, 47, 0.39);
 		}
@@ -217,7 +208,6 @@ a {
 		list-style-type: disc;
 		margin-bottom: 5px;
 	}
-	
 	p {
 		text-align: left;
 		line-height: 20px;
