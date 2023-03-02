@@ -2,9 +2,8 @@
 layout: post
 category: "THE-LINUX-COMMAND-LINE"
 tag: ['bash','linux','译']
+title: '用SHELL的视角看世界'
 ---
-
-# 用SHELL的视角看世界
 ## 展开(expansion)
 每次在你在终端上敲好命令按下回车键的时候,bash在执行这些命令之前已经对你敲下的这些文字做了些处理.比如"\*",对shell来说可能具有很多含义.产生这种效果的处理过程,叫做*展开(expansion)*.在shell执行你输入的命令之前,它可以把你输入的东西,展开成另外一些东西.为了具体说明,我们先看一下 echo 这个命令.echo 是shell内置的命令,他的功能很简单,就是把其参数输出到标准输出(终端)上.
 

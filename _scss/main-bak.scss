@@ -1,7 +1,6 @@
 ---
 ---
 
-
 @import "../_scss/reset.scss";
 @import "../_scss/syntax.scss";
 
@@ -11,7 +10,8 @@ $sidebar-color: #fff;
 $sidebar-width: 270px;
 
 html {
-	font: 14px "微软雅黑",Helvetica, Arial, sans-serif;
+	// font: 14px "微软雅黑",Helvetica, Arial, sans-serif;
+	font: 14px serif;
 	background-color: $main-bg-color;
 	height: 100%;
 }
@@ -173,10 +173,26 @@ a {
 	}
 }
 
+.post-content {
+	font-size: 14px;
+	word-spacing: 1px;
+	letter-spacing: 2px;
+	p {
+		margin-top: 1em;
+		line-height: 1.6;
+		&:first-child {
+			margin-top: 0;
+		}
+		&:first-letter {
+			margin-left: 2em;
+		}
+	}
+}
+
 .common-article {
 	$article-block-spacing: 10px;
 	word-spacing: 1px;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	overflow-x: hidden;
 	.highlighter-rouge {
 		margin-bottom: $article-block-spacing;
