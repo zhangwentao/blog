@@ -13,16 +13,16 @@ html {
 	word-spacing: 1px;
 	letter-spacing: 2px;
 	p {
-		margin-top: 1em;
+		margin: 1em 0;
 		line-height: 1.6;
-		&:first-child {
-			margin-top: 0;
-		}
 	}
 	@for $i from 1 through 7 {
 		h#{$i} {
 			font-size: calc(1em * (1 + (7 - $i) / 10));
 		}
+	}
+	ul {
+		padding: 0 0 0 18px;
 	}
 }
 
