@@ -2,7 +2,7 @@
 ---
 
 @import 'normalize';
-@import 'syntax.scss';
+@import 'syntax';
 
 html {
 	font: 14px sans-serif;
@@ -25,6 +25,10 @@ html {
 		padding: 0;
 		list-style-type: circle;
 		list-style-position: inside;
+	}
+
+	code {
+		font: 12px monospace;
 	}
 }
 
