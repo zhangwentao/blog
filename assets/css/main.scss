@@ -326,6 +326,7 @@ a {
 			white-space: pre-wrap;
 			word-break: break-all;
 			line-height: 1.2;
+			margin: 6px 0;
 		}
 
 	}
@@ -424,9 +425,12 @@ a {
 	html {
 		font-size: 16px;
 	}
-    .wrapper {
-        display: block;
-    }
+	.wrapper {
+			display: block;
+	}
+	.content {
+		font-size: 15px;
+	}
 	.recent-article .pagging {
 		position: static;
 		text-align: center;
