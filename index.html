@@ -3,18 +3,24 @@ layout: default
 title: "文韬·秘"
 ---
 
-<section class="site-main recent-article">
-	{% for post in paginator.posts %}
-	<article>
-		<header>
-			<h1><a href="{{post.url}}">{{ post.title }}</a></h1>
-			<time>{{ post.date | date:"%Y-%m-%d"}}</time>
-		</header>
-		{{ post.content }}
-	</article>
-	{%endfor%}
-	<nav class="pagging">
-		<a class="pre" href="{{paginator.previous_page_path}}" title="上一页">上一页</a>
-		<a class="next" href="{{paginator.next_page_path}}" title="下一页">下一页</a>
-	</nav>
+<section class="site-main timeline">
+	<ul>
+		{% for post in site.posts %}
+			{% assign cur_year = post.date | date:"%Y" %}
+			{% assign cur_month = post.date | date:"%m" %}
+			{% if post_month != cur_month  or  post_year != cur_year %}
+				{% unless forloop.first %}
+					</ul>
+					</li>
+				{% endunless %}
+				{% assign post_year = cur_year %}
+				{% assign post_month = cur_month %}
+				<li id="{{post_year}}-{{post_month}}">
+				<time><a href="#{{post_year}}-{{post_month}}"><span>{{post_year}}</span><span>{{post_month}}</span></a></time>
+					<ul>
+			{% endif %}
+			<li><a href="{{post.url}}">{{ post.title }}</a></li>
+		{% endfor %}
+			</li>
+	</ul>
 </section>
