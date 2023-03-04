@@ -297,8 +297,6 @@ a {
 	}
 
 	.content {
-
-		text-align: justify;
 		word-spacing: 2px;
 		letter-spacing: 0.1em;
 
@@ -322,6 +320,12 @@ a {
 			padding: 0 4px;
 			list-style-type: circle;
 			list-style-position: inside;
+		}
+
+		li {
+			white-space: pre-wrap;
+			word-break: break-all;
+			line-height: 1.2;
 		}
 
 	}
