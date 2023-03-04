@@ -49,6 +49,8 @@ a {
 }
 
 .site-main {
+	box-sizing: border-box;
+	max-width: 800px;
 	padding: 40px;
 	grid-column-start: 1;
 	grid-column-end: 2;
@@ -181,7 +183,7 @@ a {
 	$article-block-spacing: 10px;
 	word-spacing: 2px;
 	letter-spacing: 2px;
-	overflow-x: hidden;
+	// overflow-x: hidden;
 	.highlighter-rouge {
 		margin-bottom: $article-block-spacing;
 	}
