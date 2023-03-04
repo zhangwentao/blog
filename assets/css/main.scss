@@ -2,8 +2,8 @@
 ---
 
 
-@import "../_scss/reset.scss";
-@import "../_scss/syntax.scss";
+@import "reset.scss";
+@import "syntax.scss";
 
 $main-bg-color: #fafafa;
 $sidebar-bg-color: #666;
@@ -24,7 +24,7 @@ a {
     display: grid;
     grid-template-columns: auto 270px;
     grid-template-rows: 150px auto 150px;
-	min-height: 100%;
+		min-height: 100%;
 }
 
 .site-header {
@@ -59,6 +59,7 @@ a {
 
 .site-main article,
 .post {
+	max-width: 800px;
 	ul li {
 		list-style-type: disc;
 		list-style-position: inside;
@@ -175,8 +176,8 @@ a {
 
 .common-article {
 	$article-block-spacing: 10px;
-	word-spacing: 1px;
-	letter-spacing: 1px;
+	word-spacing: 2px;
+	letter-spacing: 2px;
 	overflow-x: hidden;
 	.highlighter-rouge {
 		margin-bottom: $article-block-spacing;
@@ -184,7 +185,6 @@ a {
 	.highlight {
 		padding: 10px;
 		border-radius: 5px;
-		// background:url("../img/grid.png") repeat;
 		background: #272822;
 		overflow: auto;
 	}
@@ -250,8 +250,6 @@ a {
 		margin-top: 10px;
 		color: lighten(#333,20%);
 	}
-	padding-bottom: 30px;
-	background:url("../img/icon-patterns.svg") no-repeat center bottom;
 	margin-bottom: 40px;
 }
 
@@ -288,16 +286,57 @@ a {
 	}
 }
 
+
+
 .article-detail {
 	overflow: hidden;
+	font-size: 14px;
+	p {
+		margin: 1em 0;
+		line-height: 1.6;
+	}
+
+	.content {
+
+		text-align: justify;
+		word-spacing: 2px;
+		letter-spacing: 0.1em;
+
+		@for $i from 1 through 7 {
+			h#{$i} {
+				font-size: 1em * (1 + (7 - $i) / 10);
+				margin: 20px 0 10px;
+			}
+		}
+
+		p {
+			margin: 10px 0;
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+		ul {
+			margin: 10px 0;
+			padding: 0 4px;
+			list-style-type: circle;
+			list-style-position: inside;
+		}
+
+	}
+
+
 	.comments {
-		margin-top: 30px;
+		margin-top: 50px;
 	}
 	article {
 		@extend .common-article;
 	}
+
 	.relate-info {
-		margin-top: 50px;
+		margin-top: 10px;
+		color: #999;
 		&>ul>li {
 			padding-left: 5em;
 			position: relative;
@@ -307,10 +346,10 @@ a {
 		ul>li>ul>li {
 			display: inline-block;
 			margin-right: 1em;
-			color: #333;
+			color: #999;
 		}
 		a {
-			color: #333;
+			color: #999;
 			padding: 0 2px;
 			transition: all .5s;
 			border-radius: 4px;
@@ -325,7 +364,7 @@ a {
 			&:before {
 				@extend .item-sign;
 				margin-right: 10px;
-				background-color: #333;
+				background-color: #999;
 				vertical-align: 0px;
 			}
 		}
