@@ -1,5 +1,5 @@
 ---
-title: '我理解的 JavaScript Event Loop' 
+title: '我理解的 JavaScript EventLoop'
 layout: post
 category: '技术'
 published: true
@@ -21,5 +21,4 @@ tag: ['javascript','基本概念','eventloop']
 javascript是单线程 single thread： 简单来说就是，代码只能一行（逻辑行）一行的执行，同一时间只能做一件事情。因为js是单线程的，所以它不能阻塞，因为这等于整个程序都暂停运行。那么在浏览器中，我们是如何去执行并发的去执行任务的呢？并发的任务是交给浏览器去做的，这时就需要事件机制。js可以注册事件回调，这个注册的过程会立即返回，不会阻塞js代码的执行。这个回调函数，会被添加到 “事件表”中。当回调对应的事件被触发后，回调函数会被推入到，解释器的消息队列中（message queue）（FIFO）。当，之前提到过的 call stack 为空后，解释器会从 消息队列中，取出并从队列中移除,队头的函数，放入ß call stack 中，然后执行，执行完毕后，从call stack中移除。然后，每当call stack 为空时，就会检查消息队列中是否有函数，如果有就放入 call stack 执行。
 
 # 参考资料
-
->  [Call stack | MDN](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack)
++ [CallStack-MDN](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack)
