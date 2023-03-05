@@ -21,8 +21,9 @@ a {
 
 .wrapper {
 	display: grid;
-	grid-template-columns: auto 270px;
-	grid-template-rows: 150px auto 150px;
+	width: 100vw;
+	grid-template-columns: 1fr 270px;
+	grid-template-rows: 150px 1fr 150px;
 	min-height: 100%;
 }
 
@@ -51,6 +52,7 @@ a {
 .site-main {
 	box-sizing: border-box;
 	max-width: 800px;
+	min-width: calc(800px - 270px);
 	padding: 40px;
 	grid-column-start: 1;
 	grid-column-end: 2;
@@ -160,8 +162,6 @@ a {
 }
 
 .post {
-	max-width: 800px;
-	word-spacing: 2px;
 	letter-spacing: 1px;
 	text-align: left;
 	color: #333;
@@ -247,7 +247,6 @@ a {
 
 
 .comments {
-	max-width: 800px;
 	margin-top: 50px;
 }
 
