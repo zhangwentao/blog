@@ -261,6 +261,9 @@ a {
 		line-height: 1.8;
 		margin: 6px 0;
 		text-align: justify;
+		&::marker {
+			font-style: italic;
+		}
 	}
 }
 
