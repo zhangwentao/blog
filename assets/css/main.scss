@@ -165,7 +165,7 @@ a {
 	letter-spacing: 1px;
 	text-align: left;
 	color: #333;
-
+	word-break: break-all;
 	header {
 		h1 {
 			font-size: 1.8em;
@@ -380,6 +380,7 @@ a {
 	}
 	.site-main {
 		max-width: none;
+		min-width: auto;
 		width: auto;
 		padding: 10px;
 	}
@@ -392,6 +393,9 @@ a {
 	}
 	article img {
 		width: 100%;
+	}
+	.timeline>ul>li {
+		padding-left: 80px;
 	}
 	.wrapper {
 		padding: 0;
