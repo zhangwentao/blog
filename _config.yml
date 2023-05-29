@@ -1,13 +1,13 @@
-name: 文韬·秘
+name: 我的阿福
 markdown: kramdown
 highlighter: rouge
 paginate: 5
 paginate_path: "page/:num"
 plugins: [jekyll-paginate,jekyll-feed]
 seurl: /
-url: http://blog.wentao.me
-title: 文韬·秘
-description: 文韬的blog
+url: http://webusi.top
+title: 我的阿福
+description: 我的阿福
 permalink: /:year/:month/:day/:title:output_ext
 sass:
   sass_dir: _scss 

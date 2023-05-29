@@ -8,7 +8,7 @@ layout: null
 	<channel>
         <title>{{ site.title }}</title>
         <link>{{ site.url }}</link>
-		<description>文韬的博客</description>
+		<description>我的阿福的博客</description>
 		{% for post in site.posts %}
 		<item>
 			<title>{{ post.title }}</title>
